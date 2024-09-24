@@ -1,375 +1,179 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const Homepage());
-}
+class AssignmentOne extends StatelessWidget {
+  const AssignmentOne({super.key});
 
-class Homepage extends StatelessWidget {
-  const Homepage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Container(
-            height: 1000,
-            color: const Color.fromARGB(255, 255, 255, 255),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+  Widget _containerChildThree () {
+    return Container(
+      child: Row(
+        children: [
+          Container(
+            width: 250,
+            height: 500,
+            child: Image.asset("lib/images/img1.png",fit: BoxFit.fitHeight,)
+          ),
+          Column(
+            children: [
+              Container(
+                width: 250,
+                height: 250,
+                child: Image.asset("lib/images/img2.png",fit: BoxFit.contain,)
+              ),
+              Container(
+                width: 250,
+                height: 250,
+                child: Row(
                   children: [
-                    Column(
-                      children: [
-                        Container(
-                          height: 100,
-                          width: 100,
-                          decoration: const BoxDecoration(
-                            image: DecorationImage(
-                              image: AssetImage('lib/images/img1.png')
-                            
-                            )
+                    Container(
+                      width: 125,
+                      height: 250,
+                      child: Image.asset("lib/images/img3.png",fit: BoxFit.fitHeight,)
+                    ),
+                    Container(
+                      width: 125,
+                      height: 250,
+                      child: Column(
+                        children: [
+                          Container(
+                            width: 125,
+                            height: 125,
+                            child: Image.asset("lib/images/img4.png",fit: BoxFit.contain,)
                           ),
-                        ),
-                        Container(
-                          height: 100,
-                          width: 100,
-                          color: const Color.fromARGB(255, 184, 51, 41),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              height: 200,
-                              width: 100,
-                              color: Colors.yellow,
-                            ),
-                             Container(
-                              height: 200,
-                              width: 200,
-                              color: const Color.fromARGB(255, 80, 78, 226),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
+                           Container(
+                            width: 125,
+                            height: 125,
+                            child: Image.asset("lib/images/img5.png",fit: BoxFit.contain,)
+                          )
+                        ],
+                      )
+                    )
                   ],
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                )
+              )
+            ],
+          )
+        ],
+      ),
+    );
+  }
+
+  Widget _containerChildTwo () {
+    return Container(
+      child: Row(
+        children: [
+          Container(
+            width: 250,
+            height: 250,
+            child: Image.asset("lib/images/img2.png",fit: BoxFit.cover,)
+          ),
+          Container(
+            width: 125,
+            height: 250,
+            child: Image.asset("lib/images/img2.png",fit: BoxFit.fitHeight,)
+          ),
+          Column(
+            children: [
+              Container(
+                width: 125,
+                height: 125,
+                child: Row(
                   children: [
                     Container(
-                      height: 25,
-                      width: 200,
-                      color: const Color.fromARGB(255, 39, 197, 8),
+                      width: 62.5,
+                      height: 125,
+                      child: Image.asset("lib/images/img3.png",fit: BoxFit.fitHeight,)
                     ),
                     Container(
-                      height: 25,
-                      width: 100,
-                      color: const Color.fromARGB(255, 211, 214, 35),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 50,
-                      color: const Color.fromARGB(255, 197, 52, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 231, 229, 229),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 7, 7, 7),
-                    ),
-                    
+                      width: 62.5,
+                      height: 125,
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 62.5,
+                            child: Image.asset("lib/images/img4.png",fit: BoxFit.contain,)
+                          ),
+                          Container(
+                            height: 62.5,
+                            child: Image.asset("lib/images/img5.png",fit: BoxFit.contain,)
+                          )
+                        ],
+                      ),
+                    )
                   ],
+                )
+              ),
+              Container(
+                width: 125,
+                height: 125,
+                child: Image.asset("lib/images/img6.png",fit: BoxFit.contain,)
+              )
+            ],
+          )
+        ],
+      ),
+    );
+  }
+
+  Widget _containerChildOne () {
+    return Container(
+      child: Row(
+        children: [
+          Container(
+            width: 125,
+            child: Column(
+              children: [
+                Container(
+                  height: 125,
+                  child: Image.asset("lib/images/img2.png",fit: BoxFit.contain,),
                 ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 25,
-                      width: 200,
-                      color: const Color.fromARGB(255, 39, 197, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 100,
-                      color: const Color.fromARGB(255, 211, 214, 35),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 50,
-                      color: const Color.fromARGB(255, 197, 52, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 231, 229, 229),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 48, 194, 3),
-                    ),
-                    
-                  ],
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 25,
-                      width: 200,
-                      color: const Color.fromARGB(255, 39, 197, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 100,
-                      color: const Color.fromARGB(255, 211, 214, 35),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 50,
-                      color: const Color.fromARGB(255, 197, 52, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 197, 52, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 197, 52, 8),
-                    ),
-                    
-                  ],
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 25,
-                      width: 200,
-                      color: const Color.fromARGB(255, 39, 197, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 100,
-                      color: const Color.fromARGB(255, 211, 214, 35),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 50,
-                      color: const Color.fromARGB(255, 197, 52, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 197, 52, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 197, 52, 8),
-                    ),
-                    
-                  ],
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 25,
-                      width: 200,
-                      color: const Color.fromARGB(255, 39, 197, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 100,
-                      color: const Color.fromARGB(255, 211, 214, 35),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 50,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    
-                  ],
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 25,
-                      width: 200,
-                      color: const Color.fromARGB(255, 39, 197, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 100,
-                      color: const Color.fromARGB(255, 211, 214, 35),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 50,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    
-                  ],
-                ),Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 25,
-                      width: 200,
-                      color: const Color.fromARGB(255, 39, 197, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 100,
-                      color: const Color.fromARGB(255, 211, 214, 35),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 50,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    
-                  ],
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 25,
-                      width: 200,
-                      color: const Color.fromARGB(255, 39, 197, 8),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 100,
-                      color: const Color.fromARGB(255, 211, 214, 35),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 50,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    Container(
-                      height: 25,
-                      width: 25,
-                      color: const Color.fromARGB(255, 123, 29, 151),
-                    ),
-                    
-                  ],
-                ),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-                      height: 200,
-                      width: 200,
-                      color: const Color.fromARGB(255, 202, 56, 56),
-                    ),     
-                    Container(
-                      height: 200,
-                      width: 200,
-                      color: const Color.fromARGB(255, 225, 231, 224),
-                    ),        
-                  ],
-                ),
-                Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                      height: 100,
-                      width: 200,
-                      color: const Color.fromARGB(255, 202, 56, 56),
-                    ),
-                    Container(
-                      height: 100,
-                      width: 100,
-                      color: const Color.fromARGB(255, 53, 33, 231),
-                    ),
-                    Container(
-                      height: 100,
-                      width: 100,
-                      color: const Color.fromARGB(255, 235, 214, 24),
-                    ),
-                    
-                ],
-                ),
-                Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                      height: 100,
-                      width: 200,
-                      color: const Color.fromARGB(255, 202, 56, 56),
-                    ),
-                    Container(
-                      height: 100,
-                      width: 100,
-                      color: const Color.fromARGB(255, 53, 33, 231),
-                    ),
-                    Container(
-                      height: 100,
-                      width: 100,
-                      color: const Color.fromARGB(255, 57, 211, 77),
-                    ),
-                    
-                ],
-                ),                      
+                Container(
+                  height: 125,
+                  child: Image.asset("lib/images/img4.png",fit: BoxFit.contain,),
+                )
               ],
             ),
           ),
+          Container(
+            width: 125,
+            height: 250,
+            child: Image.asset("lib/images/img1.png",fit: BoxFit.fitHeight,),
+          ),
+          Container(
+            width: 250,
+            height: 250,
+            child: Image.asset("lib/images/img6.png",fit: BoxFit.contain,)
+          )
+        ],
+      ),
+    );
+  }
+
+  Widget _containerMain () {
+    return Center(
+      child: Container(
+        width: 500,
+        height: 1000,
+        child: Column(
+          children: [
+            _containerChildOne(),
+            _containerChildTwo(),
+            _containerChildThree()
+          ],
         ),
       ),
     );
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: _containerMain(),
+    );
+  }
+}
+
+
+void main(){
+  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: AssignmentOne(),));
+
 }
